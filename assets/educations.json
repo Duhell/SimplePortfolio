@@ -1,0 +1,18 @@
+{
+    "educations": [
+        {
+            "id": 1,
+            "school" : "Technological Universiy of the Philippines Visayas",
+            "course": "Bachelor of Engineering Technology",
+            "link" : "www.google.com",
+            "year": "2020 - 2024"
+        },
+        {
+            "id": 2,
+            "school" : "Kabankalan Catholic College",
+            "course": "Science, Technology, Engineering, and Mathematics",
+            "link" : "www.google.com",
+            "year": "2018 - 2020"
+        }
+    ]
+}

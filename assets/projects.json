@@ -1,0 +1,52 @@
+{
+    "projects":[
+        {
+            "project_name":"Alyusr",
+            "status":"Live",
+            "description": "This web app is used in Saudi Arabia for job posting. This was made of laravel and boostrap.",
+            "link":"https://alyusr.website/",
+            "github":"https://github.com/Duhell/Alyusr",
+            "img":"./images/Alyusr.png"
+        },
+        {
+            "project_name":"Meshari Alhumaidi Law Firm",
+            "status":"Live",
+            "description": "A law firm web application to manage inquiries and etc. This was made of laravel and boostrap and I am one of the contributers of this web app.",
+            "link":"https://mesharialhumlaw.com/",
+            "github":"https://github.com/renitreni/law",
+            "img":"./images/meshari.png"
+        },
+        {
+            "project_name":"OFW Serbisyo Kooperatiba",
+            "status":"Live",
+            "description": "A web application used for monitoring OFWs and assisting them to their needs. This was made of Laravel and Tailwind.",
+            "link":"https://ofwserbisyokooperatiba.com/",
+            "github":"https://github.com/Duhell/MediaHouseExpress",
+            "img":"./images/ofw.png"
+        },
+        {
+            "project_name":"Seetlaw",
+            "status":"Live",
+            "description": "A web application used for managing records. This was made of Laravel and Tailwind.",
+            "link":"http://seetlaw.online/",
+            "github":"https://github.com/Duhell/SeetLaw",
+            "img":"./images/seetlaw_admin.png"
+        },
+        {
+            "project_name":"Sultan Alfouzan",
+            "status":"Live",
+            "description": "A web application used for managing records and sales of heavy equipments. This was made of Laravel and Tailwind.",
+            "link":"https://sultanalfouzanco.online/",
+            "github":"https://github.com/Duhell/Sultanalfouzanco",
+            "img":"./images/sultan.png"
+        },
+        {
+            "project_name":"Youtube Music Converter",
+            "status":"Live",
+            "description": "A simple web application to convert youtube music videos to mp3 songs. Made using React and Tailwind Css.",
+            "link":"https://ytmusic-virid.vercel.app/",
+            "github":"https://github.com/Duhell/React-YT-Music-Converter",
+            "img":"./images/yt.png"
+        }
+    ]
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <title>Ryan Villarma | Portfolio</title>
+</head>
+
+<body class="relative w-full max-w-[1460px] mx-auto h-full dark:bg-black dark:text-slate-400">
+    <div id="loading" class="fixed inset-0 z-50 grid bg-white place-items-center">
+        <img src="./assets/loading.gif" alt="loading...">
+    </div>
+    <div class="relative flex flex-col items-start justify-between px-4 py-6 md:flex-row gap-x-3">
+        <aside class="max-w-[270px] hidden md:grid place-items-center w-full sticky top-[3em] left-0">
+
+            <div class="mb-5 text-2xl font-bold">
+                <h3>Ryan Villarma</h3>
+            </div>
+
+            <ul class="space-y-2 text-sm">
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </aside>
+
+        <!-- MOBILE NAV -->
+        <nav class="flex justify-between w-full py-2 md:hidden">
+
+            <div>
+                <img src="./assets/images/logo.png" alt="logo" width="28" height="28">
+            </div>
+            <button popovertarget="nav-modal">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </button>
+        </nav>
+
+        <div id="nav-modal" popover class="w-full max-w-xs md:hidden">
+            <div class="fixed inset-0 backdrop-blur-sm bg-white/20"></div>
+            <div class="p-4 bg-white border rounded-md shadow backdrop-blur-sm ">
+                <div class="flex items-center justify-between mb-4 ">
+                    <h2 class="text-lg font-semibold">Go to...</h2>
+                    <button onclick="this.closest('[popover]').hidePopover()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+
+                    </button>
+                </div>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#getting-started">Getting Started</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- END MOBILE NAV -->
+
+        <main class="relative grow">
+
+            <!-- SEARCH COMPONENT -->
+            <div class="flex items-center mb-8 gap-x-2">
+                <div class="relative hidden grow md:block">
+                    <label for="Search" class="sr-only"> Search </label>
+
+                    <input disabled type="text" id="Search" placeholder="Press 'ctrl + f' to search... "
+                        class="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm" />
+
+                    <span class="absolute inset-y-0 grid w-10 end-0 place-content-center">
+                        <button type="button" class="text-gray-600 hover:text-gray-700">
+                            <span class="sr-only">Search</span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                        </button>
+                    </span>
+                </div>
+                <div class="hidden md:block">
+                    <div>
+                        <select name="theme" id="theme"
+                            class="w-full text-gray-700 border-gray-300 rounded-lg sm:text-sm">
+                            <option selected value="light">Light Mode</option>
+                            <option value="dark">Dark Mode</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contents" class="space-y-7">
+                <div id="getting-started">
+                    <div>
+                        <small># Getting Started</small>
+                        <h1 class="text-3xl font-semibold">WELCOME</h1>
+                    </div>
+
+                    <div class="mt-3 text-base font-light">
+                        <p>Hello and welcome! I'm <strong>Ryan Villarma</strong>, a passionate Web Developer based in
+                            the Philippines. I specialize in creating reliable, user-friendly websites and web
+                            applications that meet standard expectations. With a strong foundation in web technologies
+                            and a focus on clean, maintainable code, I aim to deliver projects that are functional and
+                            meet client requirements. Whether it's building from the ground up or improving an existing
+                            system, I'm dedicated to providing efficient and practical solutions.</p>
+                    </div>
+                </div>
+
+                <!-- EXPERIENCE COMPONENT -->
+                <div id="experience">
+                    <div>
+                        <small># About me</small>
+                        <h1 class="text-3xl font-semibold">EXPERIENCE</h1>
+                    </div>
+
+                    <div class="mt-3 text-base font-light">
+                        <div class="flow-root py-3 border border-gray-200 rounded-lg shadow-sm">
+                            <dl class="-my-3 text-sm divide-y divide-gray-100">
+                                <div class="flex items-center justify-between p-3 ">
+                                    <dt class="">
+                                        <p>Fullstack Web Developer Intern</p>
+                                        <p class="font-medium">Yaramay Computer Solution & Maintenance</p>
+                                    </dt>
+                                    <dd class="">December 2023 - June 2024</dd>
+                                </div>
+
+                                <div class="flex items-center justify-between p-3 ">
+                                    <dt class="">
+                                        <p>Freelancing</p>
+                                        <p class="font-medium">Arduino Projects</p>
+                                    </dt>
+                                    <dd class="">2022 - 2024</dd>
+                                </div>
+
+                                <div class="flex items-center justify-between p-3 ">
+                                    <dt class="">
+                                        <p>System Analyst Intern</p>
+                                        <p class="font-medium">Pixel8 Web Solutions & Consultancy Inc.</p>
+                                    </dt>
+                                    <dd class="">July 2023 - August 2023</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-7">
+                    <!-- YARAMAY -->
+                    <div id="yaramay-computer-solution-and-maintenance"
+                        class="relative before:absolute before:h-full before:rounded-lg before:w-1 before:bg-gradient-to-t before:from-cyan-500 to-blue-400">
+                        <div class="pl-4">
+                            <small># Fullstack Web Developer Intern</small>
+                            <h1 class="text-2xl font-semibold uppercase">Yaramay Computer Solution & Maintenance</h1>
+                        </div>
+                        <div class="pl-4 mt-3 text-sm font-light">
+                            <p>As a full-stack developer at Yaramay, I designed and developed web
+                                applications using Laravel for Arab users. My work included creating
+                                efficient solutions for business needs, particularly in <strong>purchase
+                                    tracking</strong>,
+                                <strong>invoicing</strong>, <strong>file uploads</strong>, <strong>automated
+                                    mails</strong>,
+                                <strong> multiple user roles</strong> and <strong>export records feature</strong>.
+                            </p><br>
+                            <p>
+                                Additionally, I contributed to the development of a job posting website using Laravel
+                                and
+                                Vue.js, where guests or registered users can browse available job listings posted by
+                                admins.
+                                The platform was designed to provide a user-friendly interface, while enabling admins to
+                                efficiently manage and post new job opportunities.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ARDUINO -->
+                    <div id="freelancing-arduino-projects"
+                        class="relative before:absolute before:h-full before:rounded-lg before:w-1 before:bg-gradient-to-t before:from-cyan-500 to-blue-400">
+                        <div class="pl-4">
+                            <small># Arduino Projects</small>
+                            <h1 class="text-2xl font-semibold">FREELANCING</h1>
+                        </div>
+                        <div class="pl-4 mt-3 text-sm font-light">
+                            <p>
+                                I offer freelance services, including assisting high school students with
+                                capstone projects, Arduino projects, and website development. I also
+                                provide coding and programming support to other students.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PIXEL8 -->
+                    <div id="pixel8-web-solutions-and-consultancy"
+                        class="relative before:absolute before:h-full before:rounded-lg before:w-1 before:bg-gradient-to-t before:from-cyan-500 to-blue-400">
+                        <div class="pl-4">
+                            <small># System Analyst Intern</small>
+                            <h1 class="text-2xl font-semibold">PIXEL8 WEB SOLUTIONS & CONSULTANCY INC.</h1>
+                        </div>
+                        <div class="pl-4 mt-3 text-sm font-light">
+                            <p>
+                                My role involved analyzing requirements, designing efficient <strong>workflows</strong>,
+                                and collaborating with cross-functional teams to deliver successful projects. I worked
+                                closely with the business analyst to ensure alignment with business goals, contributing
+                                to <strong>wireframing and prototyping</strong> using <strong>Figma</strong>.
+                                Additionally, I utilized agile methodologies to development processes, ensuring timely
+                                delivery and high-quality outcomes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATES -->
+                <div id="certificates">
+                    <div>
+                        <small># About Me</small>
+                        <h1 class="text-3xl font-semibold">CERTIFICATES</h1>
+                    </div>
+
+                    <div id="display-cert" class="grid grid-cols-1 gap-2 mt-3 font-light sm:grid-cols-2 md:grid-cols-3">
+                        <!-- Fetch -->
+                    </div>
+                </div>
+
+                <div id="education">
+                    <div>
+                        <small># About Me</small>
+                        <h1 class="text-3xl font-semibold">EDUCATIONS</h1>
+                    </div>
+
+                    <div id="display-education" class="grid grid-cols-1 gap-2 mt-3 font-light sm:grid-cols-2">
+                        <!-- Fetch -->
+                    </div>
+                </div>
+
+                <!-- PROJECTS -->
+                <div id="projects">
+                    <div>
+                        <small># About Me</small>
+                        <h1 class="text-3xl font-semibold">PROJECTS</h1>
+                    </div>
+
+                    <div class="w-full my-4 text-sm rounded-lg bg-slate-200">
+                        <div class="container flex items-center justify-between px-6 py-4 mx-auto">
+                            <div class="flex">
+                                <svg viewBox="0 0 40 40" class="fill-current size-5">
+                                    <path
+                                        d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM21.6667 28.3333H18.3334V25H21.6667V28.3333ZM21.6667 21.6666H18.3334V11.6666H21.6667V21.6666Z">
+                                    </path>
+                                </svg>
+
+                                <p class="mx-3">Link of my <a class="font-bold text-blue-600" target="_blank" href="https://github.com/Duhell?tab=repositories">github repositories</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="display-projects"
+                        class="grid grid-cols-1 gap-2 mt-3 font-light sm:grid-cols-2 md:grid-cols-3">
+                        <!-- Fetch -->
+                    </div>
+                </div>
+
+
+                <div id="contacts">
+
+                    <div>
+                        <small># Call or mail me</small>
+                        <h1 class="text-3xl font-semibold">CONTACTS</h1>
+                    </div>
+
+                    <div class="flow-root py-3 border border-gray-100 rounded-lg shadow-sm">
+                        <dl class="-my-3 text-sm divide-y divide-gray-100">
+                            <div class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
+                                <dt class="font-medium text-gray-900">Email</dt>
+                                <dd class="text-gray-700 sm:col-span-2">villarma.ryantempla@gmail.com</dd>
+                            </div>
+
+                            <div class="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4">
+                                <dt class="font-medium text-gray-900">Phone Number</dt>
+                                <dd class="text-gray-700 sm:col-span-2">09085901651</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
